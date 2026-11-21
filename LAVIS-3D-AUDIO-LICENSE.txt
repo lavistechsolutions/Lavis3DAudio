@@ -1,0 +1,272 @@
+LAVIS 3D AUDIO
+OPEN-SOURCE SOFTWARE LICENSE AND END USER TERMS
+================================================
+
+Project: LAVIS 3D AUDIO
+Publisher / project name: Lavistech Solutions
+Copyright holder: Lavistech Solutions
+Copyright year: 2026
+Project source code: https://github.com/lavistechsolutions/Lavis3DAudio/
+Project website: https://lavistech.com/
+
+IMPORTANT
+---------
+This document combines the MIT License for the original LAVIS 3D AUDIO
+project code with supplementary terms for the application distribution.
+The MIT License grants broad rights to use, copy, modify, merge, publish,
+distribute, sublicense, and sell copies of the covered software, subject
+to its conditions. Nothing in the supplementary terms below is intended
+to restrict rights granted by the MIT License or by any applicable
+third-party open-source license.
+
+Before publishing this file, replace the bracketed placeholders above.
+This is a general-purpose template, not legal advice. Have it reviewed
+for the jurisdictions and distribution model relevant to your release.
+
+
+PART 1 — MIT LICENSE
+====================
+
+Copyright (c) [INSERT YEAR] [INSERT THE LEGAL NAME OF THE COPYRIGHT OWNER]
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the "Software"),
+to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+
+PART 2 — SUPPLEMENTARY END USER TERMS
+=====================================
+
+1. SCOPE AND PRIORITY
+
+1.1 These supplementary terms apply to use of LAVIS 3D AUDIO distributions
+provided by the project publisher, including installer packages, compiled
+binaries, documentation, and project-branded materials.
+
+1.2 The MIT License in Part 1 governs the original project code identified
+as being released under that license. Third-party components are governed
+by their own accompanying licenses and notices.
+
+1.3 If these supplementary terms conflict with the MIT License or a
+third-party open-source license, the applicable open-source license
+controls with respect to the software and rights it covers.
+
+1.4 These terms do not require a recipient to accept additional restrictions
+as a condition of exercising rights granted by the MIT License.
+
+2. PERMITTED USE
+
+Subject to the applicable licenses, you may:
+
+a. install and use LAVIS 3D AUDIO for personal, educational, and commercial
+   purposes;
+b. access, study, modify, and build the publicly released source code;
+c. redistribute original or modified copies in source or object form;
+d. include the MIT-licensed project code in other software, including
+   commercial software; and
+e. distribute copies in accordance with the applicable license notices.
+
+You must comply with the attribution, notice, and other conditions of the
+MIT License and all applicable third-party licenses.
+
+3. OPEN-SOURCE ATTRIBUTION AND REDISTRIBUTION
+
+3.1 Keep the applicable copyright and license notices with copies or
+substantial portions of the MIT-licensed project code.
+
+3.2 When redistributing the application, retain and provide the required
+third-party copyright, attribution, and license notices.
+
+3.3 Do not remove or misrepresent third-party copyright notices.
+
+3.4 If you modify third-party files, comply with the relevant third-party
+license requirements, including any requirement to identify modified files.
+
+3.5 You may identify your own modifications and contributions, but must
+not imply that third-party authors endorse your changes or product.
+
+4. THIRD-PARTY SOFTWARE
+
+LAVIS 3D AUDIO may include or use third-party libraries and components.
+Their licenses are separate from the license for the original project code.
+
+The release accompanying this file identifies at least the following
+components, based on the versions supplied for this release:
+
+- Steam Audio
+  Component identified: phonon.dll
+  Version: 4.8.1
+  Copyright: Valve Corporation
+  License: Apache License, Version 2.0
+  Source: https://github.com/ValveSoftware/steam-audio
+  Purpose: Virtual surround and head-related transfer (HRTF) rendering.
+
+- NAudio
+  Version: 2.2.1
+  Copyright: 2020 Mark Heath
+  License: MIT License
+  Source: https://github.com/naudio/NAudio
+  Purpose: Playback, device selection, and live audio capture.
+
+The corresponding full license texts and attribution notices must be
+included in the distributed application package. This list is based on
+the supplied third-party notices; verify it against the exact components
+and versions included in each release.
+
+5. TRADEMARKS AND PROJECT IDENTITY
+
+5.1 The names "LAVIS 3D AUDIO", "LAVIS", and associated logos or branding
+may identify the project and its publisher.
+
+5.2 The MIT License does not grant trademark rights. Unless separately
+authorized, you may not use project branding in a way that falsely suggests
+that your modified distribution is an official release, is endorsed by the
+publisher, or is supported by the publisher.
+
+5.3 This section does not prevent truthful descriptions of compatibility,
+origin, or modification, or any use permitted by applicable law.
+
+5.4 Do not remove copyright or license notices required by the applicable
+open-source licenses.
+
+6. USER RESPONSIBILITIES
+
+You are responsible for:
+
+a. using the software in compliance with applicable laws;
+b. ensuring that audio files and other content you import, process, or
+   distribute are content you are legally entitled to use;
+c. obtaining any permissions required for recordings, broadcasts, or
+   other audio content;
+d. checking that your hardware, drivers, and Windows configuration are
+   suitable for the software; and
+e. evaluating the software before relying on it in any environment where
+   audio interruption, delay, distortion, or loss could cause harm.
+
+7. AUDIO, DEVICE, AND SYSTEM LIMITATIONS
+
+7.1 Audio output quality, latency, surround effects, equalization, volume
+boosting, and device availability may vary depending on hardware, drivers,
+operating system configuration, audio format, and other software.
+
+7.2 Features such as volume boosting or audio processing may cause
+distortion, clipping, unexpectedly high sound levels, or hearing risk.
+Start at a low volume and increase it carefully.
+
+7.3 The software is not represented as a safety-critical, medical,
+emergency, or professional monitoring system.
+
+7.4 The publisher does not guarantee compatibility with every audio
+device, codec, file format, Windows version, or hardware configuration.
+
+8. PRIVACY AND DATA
+
+8.1 The project publisher should describe any collection of telemetry,
+diagnostic information, crash reports, account information, or other
+personal data in a separate privacy notice.
+
+8.2 Do not assume that the software collects no data unless the source
+code and the applicable release have been reviewed to confirm this.
+
+8.3 If a release includes online services, update checks, analytics,
+crash reporting, or other network features, the publisher should provide
+clear information about those features and any applicable privacy choices.
+
+9. DISCLAIMER OF WARRANTY
+
+THE SOFTWARE AND ANY DISTRIBUTION PACKAGE ARE PROVIDED "AS IS" AND,
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, WITHOUT WARRANTIES
+OR CONDITIONS OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR STATUTORY,
+INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE, TITLE, AND NON-INFRINGEMENT.
+
+THE PUBLISHER DOES NOT WARRANT THAT THE SOFTWARE WILL BE ERROR-FREE,
+UNINTERRUPTED, SECURE, COMPATIBLE WITH ALL SYSTEMS, OR THAT DEFECTS
+WILL BE CORRECTED.
+
+This section does not remove any warranty or consumer right that cannot
+lawfully be excluded or limited in your jurisdiction. Third-party
+components remain subject to their own license terms.
+
+10. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE PROJECT
+PUBLISHER AND CONTRIBUTORS SHALL NOT BE LIABLE FOR INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES, OR FOR
+LOSS OF DATA, PROFITS, REVENUE, GOODWILL, BUSINESS INTERRUPTION,
+DEVICE DAMAGE, OR OTHER LOSSES ARISING OUT OF OR RELATED TO THE
+SOFTWARE OR ITS USE, WHETHER IN CONTRACT, TORT, OR OTHERWISE,
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+Nothing in this document excludes or limits liability where such
+exclusion or limitation is prohibited by applicable law, including
+liability that cannot legally be excluded.
+
+11. SUPPORT AND UPDATES
+
+11.1 The software is provided without a promise of technical support,
+maintenance, updates, or continued availability.
+
+11.2 The publisher may release updates or discontinue official builds
+at its discretion.
+
+11.3 The open-source rights granted by the applicable project license
+continue according to that license and are not withdrawn merely because
+official support or downloads are discontinued.
+
+12. TERMINATION
+
+12.1 These supplementary terms do not revoke or narrow the permissions
+already granted under the MIT License or applicable third-party licenses.
+
+12.2 If you materially breach a valid supplementary term that applies
+to your use of publisher-provided services or branding, the publisher
+may pursue remedies available under applicable law.
+
+12.3 Any termination or remedy under this section does not extinguish
+rights that the relevant open-source license makes irrevocable, subject
+to that license's own conditions.
+
+13. GOVERNING LAW AND CONSUMER RIGHTS
+
+The publisher should insert the governing law and competent courts, if
+appropriate, after obtaining legal advice:
+
+Governing law: [INSERT JURISDICTION AFTER LEGAL REVIEW]
+Courts / venue: [INSERT VENUE AFTER LEGAL REVIEW]
+
+Nothing in this document deprives a consumer of mandatory rights or
+protections under the laws that apply to that consumer.
+
+14. CHANGES TO THESE TERMS
+
+The publisher may publish revised supplementary terms for future
+versions. The license applicable to a particular copy of the open-source
+code is the license supplied with that copy, subject to the terms of that
+license. No later change retroactively removes rights already granted
+under an applicable open-source license.
+
+15. CONTACT
+
+Project: LAVIS 3D AUDIO
+Publisher / project name: Lavistech Solutions
+Website: [INSERT WEBSITE URL]
+Support / licensing contact: [INSERT CONTACT EMAIL]
+
+
+END OF LICENSE AND END USER TERMS
+=================================
