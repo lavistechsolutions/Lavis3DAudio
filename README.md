@@ -18,7 +18,7 @@ Put together by [Lavistech Solutions](https://lavistech.com/). Current version: 
 ## Requirements
 
 - Windows PC, 64-bit (Windows 10 or Windows 11)
-- For a framework-dependent build: [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0)
+- For a framework-dependent build: [.NET 10 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/10.0)
 - `phonon.dll` from Steam Audio 4.8.1, in the same folder as `Lavis3DAudio.exe`
 - All PC sound needs the FxSound virtual playback device. The player and the other live sources do not.
 
@@ -28,7 +28,7 @@ Put together by [Lavistech Solutions](https://lavistech.com/). Current version: 
 
 ## Build
 
-Install the [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0). Steam Audio’s `phonon.dll` is not in this repository. Download [Steam Audio 4.8.1](https://github.com/ValveSoftware/steam-audio/releases) for Windows 64-bit and copy `phonon.dll` to:
+Install the [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0). Steam Audio’s `phonon.dll` is not in this repository. Download [Steam Audio 4.8.1](https://github.com/ValveSoftware/steam-audio/releases) for Windows 64-bit and copy `phonon.dll` to:
 
 ```text
 native/win-x64/phonon.dll
@@ -40,9 +40,9 @@ From this directory:
 dotnet build -c Release
 ```
 
-The executable is written to `bin\Release\net8.0-windows\`, with `phonon.dll` and the `docs` folder beside it.
+The executable is written to `bin\Release\net10.0-windows\`, with `phonon.dll` and the `docs` folder beside it.
 
-A self-contained build for a PC that does not have the .NET runtime installed:
+A self-contained build for a PC that does not have the .NET 10 runtime installed:
 
 ```powershell
 dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true
