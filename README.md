@@ -1,8 +1,19 @@
-# Lavis 3D Audio
+# LAVIS 3D AUDIO
 
-Surround sound for headphones and speakers on Windows PC, 64-bit. Play your music, or process sound from other programs on the same PC.
+### Experience Music in Three Dimensions.
 
-Put together by [Lavistech Solutions](https://lavistech.com/). Current version: **1.0.0.51**.
+A free and open-source Windows audio player with virtual surround sound, equalizer, live audio processing and volume enhancement.
+
+![LAVIS 3D AUDIO](screenshots/main-player.png)
+
+[Download Latest Version](../../releases/latest)
+
+[Features](#features) |
+[Installation](#installation) |
+[Build from Source](#build-from-source) |
+[License](LICENSE)
+
+Put together by [Lavistech Solutions](https://lavistech.com/). Current version: **1.0.0.51**. Windows PC, 64-bit.
 
 ## Features
 
@@ -15,20 +26,31 @@ Put together by [Lavistech Solutions](https://lavistech.com/). Current version: 
 - **10-band equalizer** (32 Hz to 16 kHz, ±12 dB) with presets: Flat, Bass Boost, Treble Boost, Vocal, Rock, Pop, Jazz, Classical, Electronic, and Movie.
 - **Settings** for output device, listening mode, live source, loop, and what is remembered between sessions. Saved to `%AppData%\Lavis3DAudio\settings.json`.
 
-## Requirements
+## Installation
 
-- Windows PC, 64-bit (Windows 10 or Windows 11)
-- For a framework-dependent build: [.NET 10 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/10.0)
-- `phonon.dll` from Steam Audio 4.8.1, in the same folder as `Lavis3DAudio.exe`
-- All PC sound needs the FxSound virtual playback device. The player and the other live sources do not.
+Windows PC, 64-bit (Windows 10 or Windows 11).
 
-## Download
+### Windows installer
 
-64-bit Windows builds are published on the [Releases](https://github.com/lavistechsolutions/Lavis3DAudio/releases) page. Keep `phonon.dll` beside the executable. The license PDFs in `docs` are the ones opened from the About window.
+Recommended for normal users.
 
-## Build
+1. Download the Windows installer from the [latest release](../../releases/latest).
+2. Run the installer and follow the prompts.
+3. Start Lavis 3D Audio from the Start menu.
 
-Install the [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0). Steam Audio’s `phonon.dll` is not in this repository. Download [Steam Audio 4.8.1](https://github.com/ValveSoftware/steam-audio/releases) for Windows 64-bit and copy `phonon.dll` to:
+This release is framework-dependent, so the [.NET 10 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/10.0) has to be installed. If it is missing, install it before you run the app. A self-contained release would include the runtime and would not need this step. The current publish profile is not self-contained.
+
+`phonon.dll` is installed next to `Lavis3DAudio.exe`. Leave it there. The license PDFs in `docs` are the ones opened from the About window.
+
+All PC sound needs the FxSound virtual playback device. The music player and the other live sources do not.
+
+### Build from source
+
+Recommended for developers. The steps are in [Build from Source](#build-from-source).
+
+## Build from Source
+
+Install the [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0). The SDK includes the runtime used to run a local build, so a separate Desktop Runtime install is not required on the machine you build on. Steam Audio’s `phonon.dll` is not in this repository. Download [Steam Audio 4.8.1](https://github.com/ValveSoftware/steam-audio/releases) for Windows 64-bit and copy `phonon.dll` to:
 
 ```text
 native/win-x64/phonon.dll
@@ -42,7 +64,9 @@ dotnet build -c Release
 
 The executable is written to `bin\Release\net10.0-windows\`, with `phonon.dll` and the `docs` folder beside it.
 
-A self-contained build for a PC that does not have the .NET 10 runtime installed:
+`dotnet build` produces a framework-dependent program. Another PC needs the .NET 10 Desktop Runtime to run that output.
+
+A self-contained build carries the runtime with it, so the target PC does not need .NET installed:
 
 ```powershell
 dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true
@@ -61,7 +85,7 @@ The same texts are included as PDFs in `docs` and linked from About inside the a
 
 ## License
 
-Lavis 3D Audio is covered by [LICENSE.txt](LICENSE.txt). Third-party components keep their own licenses.
+Lavis 3D Audio is covered by the [MIT License](LICENSE). Third-party components keep their own licenses.
 
 ## Feedback
 
