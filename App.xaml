@@ -1,0 +1,15 @@
+<Application x:Class="Lavis3DAudio.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Lavis3DAudio"
+             StartupUri="MainWindow.xaml"
+             DispatcherUnhandledException="OnUnhandledException">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes/Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <local:EqualsConverter x:Key="Is"/>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

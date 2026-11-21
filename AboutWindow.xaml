@@ -1,0 +1,45 @@
+<Window x:Class="Lavis3DAudio.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="About" Width="640" SizeToContent="Height" ResizeMode="NoResize"
+        WindowStartupLocation="CenterOwner" ShowInTaskbar="False"
+        Icon="Assets/app.ico" Background="#121828"
+        Foreground="{StaticResource TextBrush}" FontFamily="Segoe UI">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="52"/>
+        </Grid.RowDefinitions>
+
+        <Grid Margin="28,26,32,18">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Image Source="Assets/app.png" Width="112" Height="112"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                   RenderOptions.BitmapScalingMode="HighQuality"/>
+
+            <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                <TextBlock Text="Lavis 3D Audio" FontSize="28" FontWeight="SemiBold"/>
+                <TextBlock x:Name="VersionText" FontSize="15" Margin="0,2,0,0" Foreground="{StaticResource MutedBrush}"/>
+                <TextBlock Text="Windows PC, 64-bit" FontSize="15" Margin="0,0,0,14" Foreground="{StaticResource MutedBrush}"/>
+                <TextBlock TextWrapping="Wrap" LineHeight="20" Margin="0,0,0,8"
+                           Text="Lavis 3D Audio is a surround sound engine for headphones and speakers, put together by Lavistech Solutions."/>
+                <TextBlock TextWrapping="Wrap" LineHeight="20" Margin="0,0,0,12" Foreground="{StaticResource MutedBrush}"
+                           Text="It plays your music, and can process sound from other programs on this PC."/>
+                <TextBlock x:Name="FeedbackLink" Text="Feedback" Style="{StaticResource AboutLink}" Margin="0"/>
+            </StackPanel>
+        </Grid>
+
+        <Border Grid.Row="1" Background="#10151F" BorderBrush="{StaticResource PanelBorderBrush}" BorderThickness="0,1,0,0">
+            <UniformGrid Columns="2">
+                <TextBlock x:Name="SteamLicenseLink" Text="Steam Audio license" Style="{StaticResource AboutLink}"
+                           HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0"/>
+                <TextBlock x:Name="NAudioLicenseLink" Text="NAudio license" Style="{StaticResource AboutLink}"
+                           HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0"/>
+            </UniformGrid>
+        </Border>
+    </Grid>
+</Window>
